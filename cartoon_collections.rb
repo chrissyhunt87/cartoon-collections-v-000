@@ -18,6 +18,11 @@ def long_planeteer_calls(array)
       false
     end
   end
+  if mod_array.includes?(true)
+    true
+  else
+    false
+  end
 end
 
 def find_the_cheese# code an argument here
