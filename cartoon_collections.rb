@@ -25,15 +25,5 @@ end
 def find_the_cheese(ingredients)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  cheese_return = nil
-  ingredients.each do |ingredient|
-    cheese_types.each do |cheese|
-      if ingredient == cheese
-        cheese_return == ingredient
-      else
-        false
-      end
-    end
-  end
-  cheese_return
+  cheese_return = ingredients & cheese_types
 end
