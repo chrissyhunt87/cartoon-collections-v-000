@@ -22,14 +22,25 @@ def long_planeteer_calls(array)
   contains_long_call
 end
 
-def find_the_cheese(array)
+def find_the_cheese(ingredients)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  cheese = nil
-  array.each do |ingredient|
-    cheese = cheese_types.find do |cheese|
-      ingredient == cheese
+  cheese_return = nil
+  ingredients.each do |ingredient|
+    cheese_types.each do |cheese|
+      if ingredient == cheese
+        cheese_return == ingredient
+      else
+        false
+      end
     end
   end
-  cheese
+  cheese_return
 end
+
+Define an array of possible cheese types
+Define a default cheese variable to return (will either return "nil" or the first cheese in array)
+Iterate through ingredient array
+  For each ingredient, check if == to each possible cheese
+  If equal, reset cheese return varaible, break loop
+Return cheese return variable
