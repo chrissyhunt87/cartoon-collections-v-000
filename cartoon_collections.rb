@@ -11,18 +11,15 @@ def summon_captain_planet(array)
 end
 
 def long_planeteer_calls(array)
-  mod_array = array.map do |call|
+  contains_long_call = false
+  mod_array = array.each do |call|
     if call.length > 4
-      true
+      contains_long_call = true
     else
-      false
+      nil
     end
   end
-  if mod_array.includes?(true)
-    true
-  else
-    false
-  end
+  contains_long_call
 end
 
 def find_the_cheese# code an argument here
