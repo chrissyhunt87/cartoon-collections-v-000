@@ -37,10 +37,3 @@ def find_the_cheese(ingredients)
   end
   cheese_return
 end
-
-Define an array of possible cheese types
-Define a default cheese variable to return (will either return "nil" or the first cheese in array)
-Iterate through ingredient array
-  For each ingredient, check if == to each possible cheese
-  If equal, reset cheese return varaible, break loop
-Return cheese return variable
