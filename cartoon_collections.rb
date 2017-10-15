@@ -26,6 +26,8 @@ def find_the_cheese(ingredients)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
   cheese_return = nil
-  
+  ingredients.each do |ingredient|
+    
+  end
   cheese_return
 end
